@@ -1,0 +1,140 @@
+{
+  "baseline_gbr": {
+    "overall": [
+      {
+        "regime": "overall",
+        "n_samples": 2970,
+        "rmse": 0.137880338192405,
+        "dir_acc": 0.42452830188679247,
+        "ic": -0.1383736353433323,
+        "ls_mean": -0.015288469521372621,
+        "ls_sharpe_like": -1.3982684094327447
+      }
+    ],
+    "per_regime": [
+      {
+        "regime": "calm",
+        "n_samples": 1400,
+        "rmse": 0.14082362760115213,
+        "dir_acc": 0.42714285714285716,
+        "ic": -0.1737662337662337,
+        "ls_mean": -0.0186354286938601,
+        "ls_sharpe_like": -1.867660884916975
+      },
+      {
+        "regime": "trending",
+        "n_samples": 1570,
+        "rmse": 0.13520171677411127,
+        "dir_acc": 0.4221938775510204,
+        "ic": -0.10681335649488513,
+        "ls_mean": -0.012303919940810539,
+        "ls_sharpe_like": -1.0529556267781097
+      }
+    ],
+    "calibration": [
+      {
+        "regime": "calm",
+        "n_samples": 1400,
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.77,
+        "mean_interval_width": 0.30609866596711627
+      },
+      {
+        "regime": "trending",
+        "n_samples": 1570,
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.7713375796178344,
+        "mean_interval_width": 0.28744311012165874
+      },
+      {
+        "regime": "overall",
+        "n_samples": 2970,
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.7707070707070707,
+        "mean_interval_width": 0.2962369748299552
+      }
+    ],
+    "monthly_rebalance": {
+      "total_return": -0.2617393489883505,
+      "annualised_return": -0.1592027756445955,
+      "sharpe": -1.5629207642723906,
+      "sharpe_gross": -0.9725005657922983,
+      "max_drawdown": -0.23478762034944864,
+      "avg_turnover": 2.634920634920635,
+      "total_tc_drag": 0.11066666666666665,
+      "n_periods": 21,
+      "horizon_days": 21,
+      "top_k": 3,
+      "tc_bps": 20.0
+    }
+  },
+  "transformer": {
+    "overall": [
+      {
+        "regime": "overall",
+        "n_samples": 2970,
+        "rmse": 0.07514776993690336,
+        "dir_acc": 0.5700808625336927,
+        "ic": -0.072910927456382,
+        "ls_mean": -0.008956772899365853,
+        "ls_sharpe_like": -0.6412066858276333
+      }
+    ],
+    "per_regime": [
+      {
+        "regime": "calm",
+        "n_samples": 1400,
+        "rmse": 0.08079300252517668,
+        "dir_acc": 0.5285714285714286,
+        "ic": -0.04320346320346321,
+        "ls_mean": -0.003986577659949554,
+        "ls_sharpe_like": -0.27500456056136485
+      },
+      {
+        "regime": "trending",
+        "n_samples": 1570,
+        "rmse": 0.0697293831814924,
+        "dir_acc": 0.6071428571428571,
+        "ic": -0.099401659911214,
+        "ls_mean": -0.013388794131966376,
+        "ls_sharpe_like": -0.9993527998348712
+      }
+    ],
+    "calibration": [
+      {
+        "regime": "calm",
+        "n_samples": 1400,
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.875,
+        "mean_interval_width": 0.2507875859737396
+      },
+      {
+        "regime": "trending",
+        "n_samples": 1570,
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.9121019108280255,
+        "mean_interval_width": 0.24567043781280518
+      },
+      {
+        "regime": "overall",
+        "n_samples": 2970,
+        "nominal_coverage": 0.9,
+        "empirical_coverage": 0.8946127946127946,
+        "mean_interval_width": 0.24808253347873688
+      }
+    ],
+    "monthly_rebalance": {
+      "total_return": -0.187643843079787,
+      "annualised_return": -0.11197220775575822,
+      "sharpe": -0.5993772236210124,
+      "sharpe_gross": -0.40331456577373537,
+      "max_drawdown": -0.27459928052435584,
+      "avg_turnover": 1.4285714285714286,
+      "total_tc_drag": 0.05999999999999999,
+      "n_periods": 21,
+      "horizon_days": 21,
+      "top_k": 3,
+      "tc_bps": 20.0
+    }
+  }
+}

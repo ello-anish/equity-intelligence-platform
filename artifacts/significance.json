@@ -1,0 +1,43 @@
+{
+  "diebold_mariano": {
+    "mean_diff": -0.013363800333562218,
+    "dm_stat": -7.181676779184424,
+    "p_value": 8.666400930223972e-13,
+    "n": 2970,
+    "better": "transformer"
+  },
+  "baseline_gbr_sharpe_ci": {
+    "point": -1.5629207642723906,
+    "lo": -3.2157959355813137,
+    "hi": -0.5243040774006459,
+    "n_boot": 2000,
+    "alpha": 0.05,
+    "n": 21,
+    "mean_of_boot": -1.648307891653707,
+    "std_of_boot": 0.6772511286825426
+  },
+  "transformer_sharpe_ci": {
+    "point": -0.5993772236210124,
+    "lo": -1.8111950426113088,
+    "hi": 0.6215554683089375,
+    "n_boot": 2000,
+    "alpha": 0.05,
+    "n": 21,
+    "mean_of_boot": -0.57027544202258,
+    "std_of_boot": 0.62334006160387
+  },
+  "pbo": {
+    "pbo": 0.5720279720279721,
+    "n_trials": 12870,
+    "n_strategies": 6,
+    "n_partitions": 16,
+    "strategies": [
+      "baseline_gbr:vanilla",
+      "baseline_gbr:width_scaled",
+      "baseline_gbr:sector_neutral",
+      "transformer:vanilla",
+      "transformer:width_scaled",
+      "transformer:sector_neutral"
+    ]
+  }
+}

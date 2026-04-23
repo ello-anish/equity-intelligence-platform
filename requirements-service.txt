@@ -1,0 +1,8 @@
+# Minimal deps for the FastAPI ML serving container (no training, no plotting)
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.5
+pandas==2.1.4
+numpy==1.26.2
+scipy==1.11.4
+pyarrow>=14.0

@@ -1,0 +1,72 @@
+# ── Python ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ── Environments ────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+# Secrets: block .env and any *.env files, but KEEP .env.example tracked
+.env
+*.env
+.env.local
+!.env.example
+
+# ── IDE / OS ────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ── Experiment tracking ─────────────────────────────────────────────
+mlruns/
+mlartifacts/
+
+# ── HuggingFace / model caches ──────────────────────────────────────
+.cache/
+huggingface/
+~/.cache/
+
+# ── Airflow ─────────────────────────────────────────────────────────
+dags/__pycache__/
+logs/
+airflow-webserver.pid
+airflow.cfg
+*.db
+
+# ── Ephemeral pipeline logs ─────────────────────────────────────────
+airflow_logs.txt
+pipeline_output.txt
+full_pipeline_output.txt
+
+# ── Large / regenerable artifacts ───────────────────────────────────
+# We commit the hero figure + summary JSONs + small plots so the README
+# renders on GitHub with real numbers; everything else is regenerated
+# by `python run_ml_pipeline.py`.
+artifacts/feature_panel.parquet
+artifacts/oos_preds_*.parquet
+artifacts/alloc_pnl_*.parquet
+artifacts/monthly_pnl_*.parquet
+artifacts/regime_labels.parquet
+artifacts/sentiment_cache_*.parquet
+artifacts/ablation_runs/
+artifacts/stability_runs/
+artifacts/optuna_best.json
+artifacts/optuna_trials.csv
+artifacts/stability_per_seed.csv
+artifacts/stability_summary.csv
+artifacts/ablation_table.csv
+artifacts/drift_report.csv
+
+# ── News data (if user drops a real news.csv later) ─────────────────
+data/news.csv
+news.csv
