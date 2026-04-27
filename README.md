@@ -18,6 +18,12 @@ surfaced through an interactive Streamlit dashboard.
 > reporting. When the model doesn't work, the uncertainty layer detects it
 > and the allocator scales back — which is the actual selling point.
 
+> 📘 **Want the full A-to-Z walkthrough?** See [`docs/PROJECT_GUIDE.md`](docs/PROJECT_GUIDE.md)
+> — a single read-front-to-back document covering every concept (HMM,
+> conformal prediction, Diebold-Mariano, PBO, SHAP, attention pooling,
+> the lot), every module, the empirical results explained, honest
+> limitations, and a glossary of every term and acronym used in the repo.
+
 ---
 
 ## Results at a glance
